@@ -1,7 +1,6 @@
 package com.arbab.weatherappdemo;
 
 import android.content.Context;
-import android.hardware.input.InputManager;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -65,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (Exception e){
                 e.printStackTrace();
-                Toast.makeText(getApplicationContext(),"Couldnt find weather",Toast.LENGTH_LONG).show();
 
             }
 
